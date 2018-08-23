@@ -12,5 +12,5 @@ function moveDodgerRight(){
   }
 }})
 }
-
+console.log(previousRight)
 moveDodgerRight();
