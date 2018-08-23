@@ -11,7 +11,8 @@ document.addEventListener('keydown', (event) => {
       }
 }})
 
-function moveDodgerRight(event){
+function moveDodgerRight(){
+  document.addEventListener('keydown', (event) => {
   if (event.which===39) {
     let previousRight = element.style.left
       let previousRightNumber =parseInt(previousRight.replace('px',''),10)
@@ -19,4 +20,5 @@ function moveDodgerRight(event){
           let newRightNumber=(previousRightNumber + 1) + "px"
           element.style.left = newRightNumber;
   }
+}})
 }
